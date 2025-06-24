@@ -22,8 +22,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(7, 95, 51, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(1, 82, 42, 0.95);
   z-index: 1000;
   padding: 1rem 0;
   transition: all 0.3s ease;
@@ -37,6 +36,16 @@ nav {
   align-items: center;
   padding: 0 2rem;
 }
+
+.logo-img {
+  width:auto ;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 2px;
+  transition: all 0.3s ease;
+}
+
 
 .logo {
   font-family: "Poppins", sans-serif;
@@ -133,7 +142,8 @@ nav {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #075f33, #00aa4c 100%);
+  background: linear-gradient(135deg, #05bf62 -20%, #042f17 80%);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,6 +153,7 @@ nav {
   overflow: hidden;
 }
 
+
 .hero::before {
   content: "";
   position: absolute;
@@ -150,8 +161,8 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-  animation: float 20s infinite linear;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/><circle cx="80" cy="40" r="1.5" fill="rgba(81, 248, 165, 0.95)"/><circle cx="40" cy="80" r="1" fill="rgba(81, 248, 165, 0.95)"/><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/><circle cx="20" cy="20" r="2" fill="rgba(81, 248, 165, 0.95)"/></svg>');
+  animation: float 4s infinite ease-in-out;
 }
 
 @keyframes float {
@@ -167,7 +178,7 @@ nav {
 }
 
 .hero-content {
-  max-width: 800px;
+  width: 900px;
   padding: 0 2rem;
   z-index: 1;
   position: relative;
